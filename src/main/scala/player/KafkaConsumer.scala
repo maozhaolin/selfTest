@@ -7,7 +7,7 @@ import org.apache.spark.streaming.kafka.KafkaUtils
 import org.apache.spark.streaming.{Seconds, StreamingContext}
 
 
-object bkjb {
+object KafkaConsumer {
   def main(args: Array[String]): Unit = {
     val spark = SparkSession.builder().appName("spark_kafka").master("local[*]").getOrCreate()
     val batchDuration = Seconds(5) //时间单位为秒
